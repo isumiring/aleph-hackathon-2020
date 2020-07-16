@@ -1,0 +1,12 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/style.css": "/css/style.css",
+    "/js/manifest.js": "/js/manifest.js",
+    "/js/vendor.js": "/js/vendor.js",
+    "/dist/checkout.html": "/dist/checkout.html",
+    "/dist/detail.html": "/dist/detail.html",
+    "/dist/estimation.html": "/dist/estimation.html",
+    "/dist/index.html": "/dist/index.html",
+    "/dist/login.html": "/dist/login.html",
+    "/js/main.js": "/js/main.js"
+}

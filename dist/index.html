@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amana - Home</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body class="skin-default card-no-border">
+
+    <section id="wrapper">
+        <div class="main-wrap">
+            <div class="layout-box card bg-home">
+                <div class="card-header border">
+                    <div class="top-menu text-body">
+                        <ul class="nav nav-fill nav-justified">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Venues</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Jobs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Community</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="top-box bg-alt px-4 py-2">
+                    <div class="search-box">
+                        <form class="form-material" id="search-form" action="#" method="post">
+                            <div class="form-group">
+                                <input type="text" name="search" class="form-control search" id="search" placeholder="Looking for foods or goods?" required>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="home-slider">
+                        <div class="slick-item position-relative">
+                            <img src="assets/images/slide-1.png" alt="slide-1" class="img-fluid rounded">
+                            <div class="slide-caption d-flex justify-content-between px-3">
+                                <div class="rating rounded px-3 py-1"">4.8</div>
+                                <div class="distance rounded px-3 py-1"">1.75 Km Away</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/manifest.js" type="text/javascript"></script>
+    <script src="assets/js/vendor.js" type="text/javascript"></script>
+    <script src="assets/js/app.js" type="text/javascript"></script>
+    <script src="assets/js/main.js" type="text/javascript"></script>
+    
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+    $(function () {
+        $('.home-slider').slick({
+            'dots': true,
+            'prevArrow': '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i></div>',
+            'nextArrow': '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i></div>',
+        });
+        $('[data-toggle="tooltip"]').tooltip()
+        $('input.username').mask('0000 0000');
+    })
+    </script>
+
+</body>
+
+</html>

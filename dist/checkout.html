@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mokita Emergency Call - Estimation</title>
+
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body class="skin-default card-no-border">
+
+    <section id="wrapper">
+        <div class="main-wrap">
+            <div class="layout-box card bg-home">
+
+                <div class="top-box">
+                    <div class="card-header">
+                        <div class="top-menu text-body">
+                            <h5 class="text-left mx-auto mt-3">
+                                <a href="/" class="text-decoration-none">
+                                    <i class="fas long-arrow-alt-left"></i>
+                                </a>
+                                <strong>Estimasi Sampai</strong>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row m-4">
+                    <div class="col-12">
+                        <form class="floating-labels" id="estimation-form" data-parsley-validate>
+                            <div class="form-group m-b-40">
+                                <h5>Data Pengguna</h5>
+                                <hr class="bar" />
+                            </div>
+                            <div class="form-group m-b-40">
+                                <input type="text" name="motorcycle_type" class="form-control" id="motorcycle_type" disabled value="Yamaha VIXION">
+                                <span class="bar"></span>
+                                <label for="motorcycle_type">Jenis Motor</label>
+                            </div>
+                            <div class="form-group m-b-40">
+                                <input type="text" name="vehicle_number" class="form-control" id="vehicle_number" disabled value="B 390 LU">
+                                <span class="bar"></span>
+                                <label for="vehicle_number">Plat Nomor</label>
+                            </div>
+                            <div class="form-group m-b-40">
+                                <input type="text" name="engine_number" class="form-control" id="engine_number" required>
+                                <span class="bar"></span>
+                                <label for="engine_number">Nomor Mesin (Optional)</label>
+                            </div>
+                            <div class="form-group m-b-40">
+                                <textarea name="service_action" class="form-control" id="service_action" rows="4" required></textarea>
+                                <span class="bar"></span>
+                                <label for="service_action">Jenis Servis</label>
+                            </div>
+                            <div class="form-group m-b-40">
+                                <textarea name="sparepart_replacement" class="form-control" id="sparepart_replacement" rows="4" required></textarea>
+                                <span class="bar"></span>
+                                <label for="sparepart_replacement">Sparepart Pengganti</label>
+                            </div>
+                            <div class="form-group m-b-20 mt-2">
+                                <h5>Biaya Servis</h5>
+                                <hr class="bar m-0" />
+                            </div>
+                            <div class="form-group m-b-40">
+                                <input type="number" name="visit_price" class="form-control" id="visit_price" required>
+                                <span class="bar"></span>
+                                <label for="visit_price">Biaya Kunjungan</label>
+                            </div>
+                            <div class="form-group m-b-40">
+                                <input type="number" name="service_price" class="form-control" id="service_price" required>
+                                <span class="bar"></span>
+                                <label for="service_price">Jasa Servis</label>
+                            </div>
+                            <div class="form-group m-b-40">
+                                <input type="number" name="sparepart_price" class="form-control" id="sparepart_price" required>
+                                <span class="bar"></span>
+                                <label for="sparepart_price">Biaya Sparepart</label>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <small><strong>Total Biaya</strong></small>
+                                    <br/>
+                                    <h4>Rp 170.000</h4>
+                                </div>
+                                <div class="col-6">
+                                    <button class="btn btn-block btn-lg btn-red" id="save-checkout" disabled type="submit">CHECKOUT</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/manifest.js" type="text/javascript"></script>
+    <script src="assets/js/vendor.js" type="text/javascript"></script>
+    <script src="assets/js/app.js" type="text/javascript"></script>
+    <script src="assets/js/main.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+    $(function () {
+        $('input#estimated_time').mask('000');
+
+        $.each($('#estimation-form input'), function ($key, $value) {
+            $($value).on('keyup', function () {
+                if ($('#estimation-form').parsley().isValid()) {
+                    $('#save-estimation').removeAttr('disabled').removeClass('disabled');
+                } else {
+                    $('#save-estimation').attr('disabled', true).addClass('disabled');
+                }
+            })
+        })
+    })
+    </script>
+
+</body>
+
+</html>
