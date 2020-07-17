@@ -13,8 +13,8 @@ let mix = require('laravel-mix');
 
 mix
     .options({
-        //publicPath: path.normalize('dist/assets')
-         publicPath: path.normalize('dist')
+        // publicPath: path.normalize('dist/assets')
+        publicPath: path.normalize('dist')
     })
     .setResourceRoot('../')
 ;

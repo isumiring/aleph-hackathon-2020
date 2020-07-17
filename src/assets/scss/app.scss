@@ -99,7 +99,7 @@ section {
 
 .top-menu {
     .nav {
-        font-size: 14px;
+        font-size: 1rem;
 
         .nav-link.active, .nav-link:hover, .nav-link:hover {
             color: $text-color;
@@ -114,6 +114,14 @@ section {
 
 .bg-main {
     background-color: $themecolor !important;
+}
+
+.bg-blue {
+    background-color: #211ACA;
+}
+
+.bg-caption {
+    background-color: #1CA9C9;
 }
 
 .layout-box {
@@ -148,6 +156,12 @@ section {
 
 .card-body {
     color: $text-color-alt;
+}
+
+.store-image {
+    .store-info {
+        font-size: 10px;
+    }
 }
 
 .has-feedback-left {
@@ -229,7 +243,13 @@ section {
         background-color: #FFED9F;
     }
 
+    .open-hour {
+        color: $white;
+        background-color: $green;
+    }
+
     .distance {
         background-color: #E5E5E5;
+        color: $gray-600;
     }
 }
