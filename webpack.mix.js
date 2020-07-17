@@ -13,8 +13,8 @@ let mix = require('laravel-mix');
 
 mix
     .options({
-        // publicPath: path.normalize('dist/assets')
-        publicPath: path.normalize('dist')
+        publicPath: path.normalize('dist/assets')
+        // publicPath: path.normalize('dist')
     })
     .setResourceRoot('../')
 ;
@@ -38,9 +38,9 @@ mix
     // .options({
     //     processCssUrls: false
     // });
-     .browserSync({
-         proxy: 'localhost:8080'
-     })
+    //  .browserSync({
+    //      proxy: 'localhost:8080'
+    //  })
 ;
 
 // Full API

@@ -11,14 +11,10 @@
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import '~@fortawesome/fontawesome-free/scss/solid';
 
-@import "~material-design-icons/iconfont/material-icons.css";
-
 //This is the core files
 @import 'core/core';
 // @import 'widgets/widgets';
 @import 'pages/floating-label';
-
-@import '~pretty-checkbox/src/pretty-checkbox';
 
 //In This scss you can write your scss
 @import 'app'; 
