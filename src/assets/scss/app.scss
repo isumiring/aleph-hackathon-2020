@@ -91,6 +91,10 @@ a {
     }
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 section {
     &#wrapper {
         height: 100%;
@@ -99,7 +103,7 @@ section {
 
 .top-menu {
     .nav {
-        font-size: 14px;
+        font-size: 1rem;
 
         .nav-link.active, .nav-link:hover, .nav-link:hover {
             color: $text-color;
@@ -114,6 +118,14 @@ section {
 
 .bg-main {
     background-color: $themecolor !important;
+}
+
+.bg-blue {
+    background-color: #211ACA;
+}
+
+.bg-caption {
+    background-color: #1CA9C9;
 }
 
 .layout-box {
@@ -150,6 +162,12 @@ section {
     color: $text-color-alt;
 }
 
+.store-image {
+    .store-info {
+        font-size: 10px;
+    }
+}
+
 .has-feedback-left {
     .form-control {
         padding-right: 12px;
@@ -161,6 +179,33 @@ section {
         position: absolute;
         left: 0;
         bottom: 0;
+    }
+}
+
+.customtab {
+    border-bottom: 2px solid $gray-400;
+
+    li {
+        &.nav-item {
+            margin-bottom: -2px;
+        }
+        
+        a.nav-link {
+            border: 0px;
+            padding: 20px 20px 8px;
+            color: $gray-600;
+            font-size: 1.125rem;
+            font-weight: 700;
+
+            &.active {
+                border-bottom: 2px solid $green;
+                color: $text-color;
+            }
+
+            &:hover {
+                color: $text-color;
+            }
+        }
     }
 }
 
@@ -229,7 +274,26 @@ section {
         background-color: #FFED9F;
     }
 
+    .open-hour {
+        color: $white;
+        background-color: $green;
+    }
+
     .distance {
         background-color: #E5E5E5;
+        color: $gray-600;
     }
+}
+
+.img-success {
+    width: 100px;
+    height: 100px;
+}
+
+.btn-explore {
+    margin-top:20px; 
+    border:2px solid #66AF29;
+    padding:10px;
+    margin-left:20px;
+    margin-right: 20px;
 }

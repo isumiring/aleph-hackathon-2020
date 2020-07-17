@@ -38,9 +38,9 @@ mix
     // .options({
     //     processCssUrls: false
     // });
-    // .browserSync({
-    //     proxy: 'localhost:8080'
-    // })
+    //  .browserSync({
+    //      proxy: 'localhost:8080'
+    //  })
 ;
 
 // Full API
