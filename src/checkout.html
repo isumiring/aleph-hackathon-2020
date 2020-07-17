@@ -10,7 +10,8 @@
     <meta content="" name="description">
 
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap">
 
     <link href="assets/css/style.css" type="text/css" rel="stylesheet">
 </head>
@@ -37,7 +38,8 @@
                                 <h2 class="text-black font-weight-bold mb-1" style="font-family: Roboto Slab; ">
                                     Checkout
                                 </h2>
-                                <div style="border: 1px solid #000; padding:16px; margin-top:16px; margin-bottom: 16px;">
+                                <div
+                                    style="border: 1px solid #000; padding:16px; margin-top:16px; margin-bottom: 16px;">
                                     <div class="media-body d-flex justify-content-between">
                                         <div class="media-content">
                                             <p class="text-black font-weight-bold mb-0">Total: Rp 95.000</p>
@@ -57,26 +59,22 @@
                         <div class="card-body pt-2">
                             <h4 class="card-title font-weight-bold" style="font-family: Roboto Slab; ">Delivery Details
                             </h4>
-                            <form>
+                            <form class="form-material">
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Full Name</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                    <input type="text" value="Ridho Ade Putra" class="form-control" id="exampleInputEmail1"
                                         aria-describedby="emailHelp" placeholder="Full Name">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Phone Number</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                    <input type="text" value="085365908242" class="form-control" id="exampleInputEmail1"
                                         aria-describedby="emailHelp" placeholder="Phone Number">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">Delivery Address</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1"
+                                    <input type="text" value="Jl. Kangen Gg. Rindu no 21" class="form-control" id="exampleInputPassword1"
                                         placeholder="Delivery Address">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">Notes</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1"
-                                        placeholder="i.e no suger, make spicy">
+                                    <input type="text" class="form-control" id="exampleInputPassword1"
+                                        placeholder="Notes (i.e no suger, make spicy)">
                                 </div>
                             </form>
 
@@ -88,7 +86,7 @@
                                     <button type="button" class="btn btn-secondary btn-block">Cancel</button>
                                 </div>
                                 <div class="col">
-                                    <button type="button" class="btn btn-outline-success  btn-block">Checkout</button>
+                                    <button type="button" id="checkout" class="btn btn-outline-success  btn-block">Checkout</button>
                                 </div>
                             </div>
 
@@ -107,8 +105,15 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script type="text/javascript">
-        $(function () {
+        function send_handle() {
+            var win = window.open(`https://api.whatsapp.com/send?phone=6285365908242&text=*Amana%20Order%20Details*%0ATotal%3A%20Rp%2095.000%0A%0AAyam%20Geprek%20level%2010%20(2)%0AKol%20Goreng%20(1)%0A%0A*Delivery%20Details*%0ARidho%20Ade%20Putra%0A%2B6285365908242%0AJl.%20Kangen%20Gg.%20Rindu%20no%2021%0A%0AThanks%0A`, '_blank');
+            // win.focus();
+        }
+
+        $("#checkout").click(function(){
+            send_handle()
         })
+
     </script>
 
 </body>
