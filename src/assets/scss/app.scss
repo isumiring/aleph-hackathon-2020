@@ -41,6 +41,12 @@ a {
     color: $blue;
 }
 
+.hover-white {
+    &:hover {
+        color: $white !important;
+    }
+}
+
 .row.no-gutters {
     margin-right: 0;
     margin-left: 0;
