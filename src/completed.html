@@ -27,15 +27,15 @@
                     <div class="card">
 
                         <div class="card-body pt-2">
-                            <center>
+                            <div class="text-center">
                                 <img src="assets/images/success.png" class="img-success mb-5 mt-5">
                                 <h3 class="card-title font-weight-bold" style="font-family: Roboto Slab; ">
                                     Order Completed!
                                 </h3>
-
-                                <p class="text-black">Please check your WhatsApp, the reastaurant should have contacted
-                                    you alreay!</p>
-                            </center>
+                                <p class="text-black">
+                                    Please check your WhatsApp, the reastaurant should have contacted you alreay!
+                                </p>
+                            </div>
 
                             <div class="card" style="background: #F4F4F4;">
                                 <div class="card-body">
@@ -54,18 +54,14 @@
                                 </div>
                             </div>
 
-                            <center>
-                                <a href="store.html">
-                                    <h5 class="font-weight-bold text-black btn-explore">
-                                        Explore Other Venues!
-                                    </h5>
+                            <div class="text-center">
+                                <a href="store.html" class="btn btn-outline-success btn-block text-black hover-white" role="button">
+                                    <h5 class="font-weight-bold my-1">Explore Other Venues</h5>
                                 </a>
                                 <a href="index.html">
-                                    <h6 class="text-black font-weight-bold" style="margin-top:30px">Go to homepage</h6>
+                                    <h6 class="text-black font-weight-bold mt-4">Go to homepage</h6>
                                 </a>
-                            </center>
-
-
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -80,9 +76,6 @@
 
     <script type="text/javascript">
         $(function () {
-            $('.home-slider').slick({
-                'dots': true,
-            });
             $('[data-toggle="tooltip"]').tooltip()
             $('input.username').mask('0000 0000');
         })
