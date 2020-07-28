@@ -12,6 +12,8 @@ try {
 
     require('bootstrap');
 
+    window.lozad = require('lozad')
+    
     // sweetalert2
     window.Swal = require('sweetalert2')
 
